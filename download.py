@@ -6,37 +6,28 @@ import os
 import re
 import sys
 from tqdm import tqdm
+from argparse import ArgumentParser
 
-def verify_arg():
+def argumnet_parser():
 
     """
-    Check for the arguments, and check if it is correct or not
-
-    Returns:
-        url [String] : Returns a page url to donwload the wallpapers
+    Parse command line arguments.
+    Returns:  command line arguments
     """
 
-    if len(sys.argv) == 1:
-        print("Please provide the link of the wallpaper collection link")
-        sys.exit(1)
-    elif len(sys.argv) == 2:
-        try:
-            if "://getwallpapers.com/" in str(sys.argv[1]):
-                url = str(sys.argv[1])
-        except ValueError as e:
-            print("Please enter a valid url")
-            sys.exit(1)
-    else:
-        print("Too many arguments")
-        sys.exit(1)
-
-    return url
+    parser = ArgumentParser()
+    parser.add_argument("-l", "--link", required=True, type=str,
+                        help="Provide the link of the wallpaper collection not")
+    return parser
 
 def parse(web_url):
 
     """
     Parse the url and return the soup [HTML thingy]
     """
+    if "://getwallpapers.com/" not in web_url:
+        print("Please enter a valid getwallpapers.com url")
+        sys.exit(1)
 
     url = request.urlopen(web_url)
     soup = bs4.BeautifulSoup(url, 'lxml')
@@ -74,7 +65,7 @@ def download(soup, folder_name):
         request.urlretrieve(final_url, fullfilename)
 
 if __name__ == "__main__":
-    url = verify_arg()
-    soup = parse(url)
+    args = argumnet_parser().parse_args()
+    soup = parse(args.link)
     folder_name = folder_name(soup)
     download(soup, folder_name)
