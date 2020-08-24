@@ -3,7 +3,7 @@ from io import open
 
 setup(
     name='getwallpapers-downloader',
-    version='0.0.1',
+    version='0.0.1.1',
     description='Download wallpapers from getwallpapers.com',
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
