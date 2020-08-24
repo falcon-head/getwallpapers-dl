@@ -12,15 +12,9 @@ setup(
     author_email='iamuraptha@gmail.com',
     license='MIT',
     packages=find_packages(),
-        entry_points={
-            'console_scripts': [
-                'getwallpapers_downloader = getwallpapers_downloader.__main__:main'
-            ]
-    },
-    zip_safe=False,
     python_requires='>=3.6',
     install_requires=[
-        'beautifulsoup4',
+        'beautifulsoup4','tqdm','urllib3'
     ],
     classifiers=[
         'License :: OSI Approved :: MIT License',
