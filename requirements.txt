@@ -1,0 +1,8 @@
+tqdm
+beautifulsoup4
+urllib3
+pytest
+
+wheel
+setuptools
+twine

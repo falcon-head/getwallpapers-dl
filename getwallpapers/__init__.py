@@ -1,1 +1,2 @@
-from getwallpapers.downloader import downloader 
+# __init__.py
+__version__ = '0.1.0'

@@ -1,23 +1,26 @@
-from setuptools import setup, find_packages
-from io import open
+from setuptools import find_packages, setup
+
+with open('README.md', 'r', encoding='utf-8') as file:
+    long_description = file.read()
 
 setup(
-    name='getwallpapers-downloader',
-    version='0.0.1.1',
-    description='Download wallpapers from getwallpapers.com',
-    long_description=open('README.md', 'r', encoding='utf-8').read(),
+    name                ='getwallpapers',
+    packages            =find_packages(include=['getwallpapers']),
+    version             ='0.1.6',
+    description         ='download wallpaper collection from http://getwallpapers.com/',
+    long_description    = long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/falcon-head/getwallpapers-downloader',
-    author='Aptha K S',
-    author_email='iamuraptha@gmail.com',
-    license='MIT',
-    packages=find_packages(),
-    python_requires='>=3.6',
-    install_requires=[
-        'beautifulsoup4','tqdm','urllib3'
-    ],
-    classifiers=[
+    author              ='Shrikrishna Joisa',
+    author_email        ='shrikrishnajois@gmail.com',
+    license             ='MIT',
+    url                 ='https://github.com/falcon-head/getwallpapers-downloader',
+    platforms           =['Any'],
+    py_modules          =[],
+    install_requires    =['beautifulsoup4', 'tqdm', 'urllib3'],
+    classifiers         =[
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.6',
-    ]
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+    ],
 )
