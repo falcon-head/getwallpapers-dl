@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as file:
 setup(
     name                ='getwallpapers',
     packages            =find_packages(include=['getwallpapers']),
-    version             ='0.1.6',
+    version             ='0.1.0',
     description         ='download wallpaper collection from http://getwallpapers.com/',
     long_description    = long_description,
     long_description_content_type='text/markdown',
@@ -18,7 +18,7 @@ setup(
     py_modules          =[],
     install_requires    =['beautifulsoup4', 'tqdm', 'urllib3'],
     classifiers         =[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',

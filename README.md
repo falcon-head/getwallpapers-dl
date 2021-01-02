@@ -4,13 +4,13 @@ Lets you download wallpaper collection from http://getwallpapers.com/
 
 ## ⚙️ Installation
 
-You can install it from [PyPI](https://pypi.org/project/getwallpapers-dl/0.1.0/)
+You can install it from [PyPI](https://pypi.org/project/getwallpapers/0.1.0/)
 
 ## 💻 How to Use
 
 You can run it as a module in a command line as `getwallpapers` followed by an `wallpaper collection url`. It will generate a folder in the particular location that you are running from and downloads all the collection wallpapers into it.
 
-    $ python getwallpapers-dl <wallpaper-url>
+    $ python getwallpapers <wallpaper-url>
 
 ## 📑 Release History
 
