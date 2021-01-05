@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as file:
 setup(
     name                ='getwallpapers',
     packages            =find_packages(include=['getwallpapers']),
-    version             ='0.1.0',
+    version             ='0.1.1',
     description         ='download wallpaper collection from http://getwallpapers.com/',
     long_description    = long_description,
     long_description_content_type='text/markdown',

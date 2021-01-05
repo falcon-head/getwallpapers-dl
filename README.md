@@ -4,7 +4,7 @@ Lets you download wallpaper collection from http://getwallpapers.com/
 
 ## ⚙️ Installation
 
-You can install it from [PyPI](https://pypi.org/project/getwallpapers/0.1.0/)
+You can install it from [PyPI](https://pypi.org/project/getwallpapers/)
 
 ## 💻 How to Use
 
@@ -14,7 +14,7 @@ You can run it as a module in a command line as `getwallpapers` followed by an `
 
 ## 📑 Release History
 
-* 0.1.0
+* 0.1.1
 
     * First version - save all the wallpaper in a folder
 
