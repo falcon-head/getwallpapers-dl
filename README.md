@@ -24,7 +24,7 @@ Feel free to contribute with anything.
 
 ## ⚖️ License
 
-Copyright (c) 2020 Shikrishna Joisa. <br />
+Copyright (c) 2021 Shikrishna Joisa. <br />
 <br />
 Distributed under the MIT license. <br />
 See [`LICENSE`](https://github.com/Diegoslourenco/skoopy/blob/main/LICENSE) for more information.
